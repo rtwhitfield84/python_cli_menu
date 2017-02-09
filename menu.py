@@ -11,35 +11,55 @@ def mainMenu():
 	print("5. Moo your fortune")
 	print("6. Quit")
 
-	choice=int(input("Enter choice: "))
+	while True:
+		try:
+			choice=int(input("Enter choice: "))
 
-	if choice==1:
-		kind()
-	elif choice==2:
-		mean()
-	elif choice==3:
-		weird()
-	elif choice==4:
-		funny()
-	elif choice==5:
-		fortune()
-	elif choice==6:
-		quit()
-	else:
-		print("Please enter a valid choice")
-
+			if choice==1:
+				kind()
+				break
+			elif choice==2:
+				mean()
+				break
+			elif choice==3:
+				weird()
+				break
+			elif choice==4:
+				funny()
+				break
+			elif choice==5:
+				fortune()
+				break
+			elif choice==6:
+				quit()
+				break
+			else:
+				print("Please enter a valid choice")
+		except ValueError:
+				print("Please enter a valid choice")
+	exit
 
 def kind():
 	os.system("cowsay You look beautiful!")
+	anykey=input("Press Enter to return to Main Menu")
+	mainMenu()
 def mean():
 	os.system("cowsay You look just like my Sister!")
+	anykey=input("Press Enter to return to Main Menu")
+	mainMenu()
 def weird():
-	os.system("cowsay Who wants a steak?")
+	os.system("cowsay Have some steak!")
+	anykey=input("Press Enter to return to Main Menu")
+	mainMenu()
 def funny():
 	os.system("cowsay What do you call a cow on the barnyard floor? Ground Beef")
+	anykey=input("Press Enter to return to Main Menu")
+	mainMenu()
 def fortune():
 	os.system("fortune | cowsay")
-def weird():
-	os.system("qui()")
+	anykey=input("Press Enter to return to Main Menu")
+	mainMenu()
+def quit():
+	exit
 
 mainMenu()
