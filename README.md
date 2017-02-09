@@ -4,11 +4,8 @@ A simple cowmmand line app i wrote for fun
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-Make sure you have python, cowsay and fortune installed
+Make sure you have python 3, cowsay and fortune installed
 
 ```
 brew install pyenv
