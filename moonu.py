@@ -43,23 +43,30 @@ def kind():
 	os.system("cowsay You look beautiful!")
 	anykey=input("Press Enter to return to Main Menu")
 	mainMenu()
+
 def mean():
 	os.system("cowsay You look just like my Sister!")
 	anykey=input("Press Enter to return to Main Menu")
 	mainMenu()
+
 def weird():
 	os.system("cowsay Have some steak!")
 	anykey=input("Press Enter to return to Main Menu")
 	mainMenu()
+
 def funny():
 	os.system("cowsay What do you call a cow on the barnyard floor? Ground Beef")
 	anykey=input("Press Enter to return to Main Menu")
 	mainMenu()
+
 def fortune():
 	os.system("fortune | cowsay")
 	anykey=input("Press Enter to return to Main Menu")
 	mainMenu()
+
 def quit():
 	exit
 
 mainMenu()
+
+
