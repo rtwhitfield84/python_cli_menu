@@ -15,22 +15,22 @@ def mainMenu():
 		try:
 			choice=int(input("Enter choice: "))
 
-			if choice==1:
+			if choice == 1:
 				kind()
 				break
-			elif choice==2:
+			elif choice == 2:
 				mean()
 				break
-			elif choice==3:
+			elif choice == 3:
 				weird()
 				break
-			elif choice==4:
+			elif choice == 4:
 				funny()
 				break
-			elif choice==5:
+			elif choice == 5:
 				fortune()
 				break
-			elif choice==6:
+			elif choice == 6:
 				quit()
 				break
 			else:
@@ -51,22 +51,22 @@ def mean():
 
 def weird():
 	os.system("cowsay Have some steak!")
-	anykey=input("Press Enter to return to Main Menu")
+	anykey = input("Press Enter to return to Main Menu")
 	mainMenu()
 
 def funny():
 	os.system("cowsay What do you call a cow on the barnyard floor? Ground Beef")
-	anykey=input("Press Enter to return to Main Menu")
+	anykey = input("Press Enter to return to Main Menu")
 	mainMenu()
 
 def fortune():
 	os.system("fortune | cowsay")
-	anykey=input("Press Enter to return to Main Menu")
+	anykey = input("Press Enter to return to Main Menu")
 	mainMenu()
 
 def quit():
 	exit
 
-mainMenu()
-
+if __name__ == '__main__':
+	mainMenu()
 
