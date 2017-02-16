@@ -8,8 +8,8 @@ A simple cowmmand line app i wrote for fun
 Make sure you have python 3, cowsay and fortune installed
 
 ```
-brew install pyenv
-pyenv install 3.3.6
+brew install python3
+
 ```
 
 ```
@@ -20,7 +20,7 @@ brew install cowsay
 brew install fortune
 ```
 
-## Deployment
+## Usage
 
 Fork or clone this repo 
 
