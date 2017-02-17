@@ -24,6 +24,7 @@ brew install fortune
 
 Fork or clone this repo 
 
+
 In parent directory run
 
 ```
